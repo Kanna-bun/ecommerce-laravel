@@ -2,6 +2,6 @@
 
 @section('content')
     
-
+<a href="show">Produit</a>
 
 @endsection
