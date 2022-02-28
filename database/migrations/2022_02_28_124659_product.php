@@ -17,9 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->integer('price');
+            $table->float('price');
             $table->string('slug');
-            $table->timestamp('created_at')->nullable();
             $table->foreignId('hot');
             $table->string('color');
             $table->string('picture');

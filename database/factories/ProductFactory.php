@@ -21,7 +21,6 @@ class ProductFactory extends Factory
             'description' => $this->faker->text(150),
             'price' => rand(1, 100),
             'slug' => $this->faker->word(4),
-            'created_at' => $this->faker->date(),
             'picture' => $this->faker->imageUrl(),
         ];
     }
