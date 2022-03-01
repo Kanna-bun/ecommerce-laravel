@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Route::controller(ProductController::class)->group(function() {
     Route::get('/products', 'index');
-    Route::get('products/{product}', 'show');
+    Route::get('/products/{product}', 'show');
 });
 
 Route::controller(CategoryController::class)->group(function() {
