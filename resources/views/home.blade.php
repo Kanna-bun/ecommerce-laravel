@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
-        <h1 class="text-center">Eorzean Style</h1>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Eorzean style</h1>
+        <p class="lead text-muted mb-0">La mode eorzéene pour tout le monde !</p>
     </div>
+</section>
 
     <div class="container">
         <div class="row">
@@ -63,6 +66,89 @@
                 <div class="card">
                     <div class="card-header bg-primary text-white text-uppercase">
                         <i class="fa fa-star"></i> Derniers produits
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="btn btn-danger w-100">99,00 &euro;</p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="cart.html" class="btn btn-success w-100">Ajouter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="btn btn-danger w-100">99,00 &euro;</p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="cart.html" class="btn btn-success w-100">Ajouter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="btn btn-danger w-100">99,00 &euro;</p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="cart.html" class="btn btn-success w-100">Ajouter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href="product.html" title="View Product">Produit</a></h4>
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="btn btn-danger w-100">99,00 &euro;</p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="cart.html" class="btn btn-success w-100">Ajouter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 mb-4">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-uppercase">
+                        <i class="fa fa-trophy"></i> Meilleurs produits
                     </div>
                     <div class="card-body">
                         <div class="row">

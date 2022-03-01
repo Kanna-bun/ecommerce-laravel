@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-centered">Contact</h1>
-
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Contact</h1>
+    </div>
+</section>
     <div class="container">
         <div class="row">
             <div class="col">
