@@ -17,9 +17,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">Accueil</a>
-              <a class="nav-link" href="/products">Produits</a>
-              <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                <a class="nav-link" href="/admin/index">Admin</a>
+                <a class="nav-link" href="/products">Produits</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </div>
           </div>
         </div>

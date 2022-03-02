@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->float('price');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->boolean('hot')->nullable();
             $table->string('color')->nullable();
             $table->string('picture');

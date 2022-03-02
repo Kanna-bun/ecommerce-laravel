@@ -41,6 +41,15 @@ class AdminProductController extends Controller
             'price' => 'required|numeric|min:99|max:1000',
             'picture' => 'required',
         ]);
+
+            $product =Product::create([
+                'name' => request('name'),
+                'description' => request('description'),
+                'price' => request('price'),
+                'picture' => request('picture'),
+            ]);
+
+            return redirect('/admin')->with('status', 'Le produit a été créé.');
     }
 
     /**
@@ -79,10 +88,17 @@ class AdminProductController extends Controller
     public function update(Request $request, Product $product)
     {
         request()->validate([
-            'name' => 'required|min:3|max:20',
-            'description' => 'required|max:200',
-            'price' => 'required',
+            'name' => 'required|min:3',
+            'description' => 'required|min:10',
+            'price' => 'required|numeric|min:99|max:1000',
             'picture' => 'required',
+        ]);
+
+        $product->update([
+            'name' =>request('name'),
+            'description' =>request('description'),
+            'price' => request('price'),
+            'picture' => request('picture'),
         ]);
 
         return redirect('/admin')->with('status', 'Le produit '.$product->name.' a bien été modifié.');

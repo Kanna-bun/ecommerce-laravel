@@ -45,7 +45,7 @@ Route::controller(AdminProductController::class)->group(function() {
     Route::get('/admin/create', 'create');
     Route::post('/admin/create', 'store');
     Route::get('/admin/products', 'show');
-    Route::get('/admin/edit/{product}', 'edit');
+    Route::get('/admin/edit', 'edit');
     Route::put('/admin/{product}', 'update');
     Route::put('/admin/{product}', 'destroy');
 });
