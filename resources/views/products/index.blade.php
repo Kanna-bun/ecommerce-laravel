@@ -8,7 +8,6 @@
     </div>
 </section>
 
-
 <div class="col">
     <div class="row">
         @foreach ($products as $product)
@@ -16,7 +15,7 @@
             <div class="card">
                 <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
                 <div class="card-body">
-                    <h4 class="card-title"><a href="/products/{{ $product->name }}" title="View Product">{{ $product->name }}</a></h4>
+                    <h4 class="card-title"><a href="/products/{{ $product->id }}" title="View Product">{{ $product->name }}</a></h4>
                     <p class="card-text">{{ $product->description }}.</p>
                     <div class="row">
                         <div class="col">
