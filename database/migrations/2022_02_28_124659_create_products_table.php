@@ -19,10 +19,10 @@ return new class extends Migration
             $table->text('description');
             $table->float('price');
             $table->string('slug');
-            $table->foreignId('hot')->nullable();
+            $table->boolean('hot')->nullable();
             $table->string('color')->nullable();
             $table->string('picture');
-            $table->integer('promo')->nullable();
+            $table->float('promo')->nullable();
             $table->timestamps();
         });
     }

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
@@ -31,4 +33,19 @@ Route::controller(CategoryController::class)->group(function() {
 
 Route::controller(ContactController::class)->group(function() {
     Route::get('contact', 'index');
+});
+
+
+Route::controller(AdminController::class)->group(function() {
+    Route::get('/admin', 'index');
+});
+
+Route::controller(AdminProductController::class)->group(function() {
+    Route::get('/admin/products', 'index');
+    Route::get('/admin/create', 'create');
+    Route::post('/admin/create', 'store');
+    Route::get('/admin/{product}', 'show');
+    Route::get('/admin/{product}/modifier', 'edit');
+    Route::put('/admin/{product}', 'update');
+    Route::put('/admin/{product}', 'destroy');
 });
