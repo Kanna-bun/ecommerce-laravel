@@ -41,11 +41,11 @@ Route::controller(AdminController::class)->group(function() {
 });
 
 Route::controller(AdminProductController::class)->group(function() {
-    Route::get('/admin/products', 'index');
+    Route::get('/admin/index', 'index');
     Route::get('/admin/create', 'create');
     Route::post('/admin/create', 'store');
-    Route::get('/admin/{product}', 'show');
-    Route::get('/admin/{product}/modifier', 'edit');
+    Route::get('/admin/products', 'show');
+    Route::get('/admin/edit/{product}', 'edit');
     Route::put('/admin/{product}', 'update');
     Route::put('/admin/{product}', 'destroy');
 });

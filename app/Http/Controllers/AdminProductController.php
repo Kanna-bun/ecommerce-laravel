@@ -14,7 +14,7 @@ class AdminProductController extends Controller
      */
     public function index()
     {
-        return view('admin.products');
+        return view('admin.index');
     }
 
     /**
@@ -36,9 +36,9 @@ class AdminProductController extends Controller
     public function store(Request $request)
     {
         request()->validate([
-            'name' => 'required|min:3|max:20',
-            'description' => 'required|max:200',
-            'price' => 'required',
+            'name' => 'required|min:3',
+            'description' => 'required|min:10',
+            'price' => 'required|numeric|min:99|max:1000',
             'picture' => 'required',
         ]);
     }
@@ -51,8 +51,8 @@ class AdminProductController extends Controller
      */
     public function show(Product $product)
     {
-        return view('admin.list', [
-            'product' => $product,
+        return view('admin.products', [
+            'products' => Product::paginate(),
         ]);
     }
 
